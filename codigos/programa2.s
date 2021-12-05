@@ -1,43 +1,38 @@
-.file	"program2.c"
-	.text
-	.section .rdata,"dr"
-.LC0:
-	.ascii "correcto\0"
-	.text
-	.def	printf.constprop.0;	.scl	3;	.type	32;	.endef
-	.seh_proc	printf.constprop.0
-printf.constprop.0:
-	subq	$72, %rsp
-	.seh_stackalloc	72
-	.seh_endprologue
-	movl	$1, %ecx
-	movq	%r8, 96(%rsp)
-	leaq	88(%rsp), %r8
-	movq	%rdx, 88(%rsp)
-	movq	%r9, 104(%rsp)
-	movq	%r8, 56(%rsp)
-	movq	%r8, 40(%rsp)
-	call	*__imp___acrt_iob_func(%rip)
-	movq	40(%rsp), %r8
-	leaq	.LC0(%rip), %rdx
-	movq	%rax, %rcx
-	call	__mingw_vfprintf
-	addq	$72, %rsp
-	ret
-	.seh_endproc
-	.def	__main;	.scl	2;	.type	32;	.endef
-	.section	.text.startup,"x"
-	.globl	main
-	.def	main;	.scl	2;	.type	32;	.endef
-	.seh_proc	main
+
+        .arch armv6
+        .eabi_attribute 28, 1
+        .eabi_attribute 20, 1
+        .eabi_attribute 21, 1
+        .eabi_attribute 23, 3
+        .eabi_attribute 24, 1
+        .eabi_attribute 25, 1
+        .eabi_attribute 26, 2
+        .eabi_attribute 30, 4
+        .eabi_attribute 34, 1
+        .eabi_attribute 18, 4
+        .file   "t1.c"
+        .text
+        .section        .text.startup,"ax",%progbits
+        .align  2
+        .global main
+        .arch armv6
+        .syntax unified
+        .arm
+        .fpu vfp
+        .type   main, %function
 main:
-	subq	$40, %rsp
-	.seh_stackalloc	40
-	.seh_endprologue
-	call	__main
-	leaq	.LC0(%rip), %rcx
-	addq	$40, %rsp
-	jmp	printf.constprop.0
-	.seh_endproc
-	.ident	"GCC: (Rev5, Built by MSYS2 project) 10.3.0"
-	.def	__mingw_vfprintf;	.scl	2;	.type	32;	.endef
+        @ args = 0, pretend = 0, frame = 0
+        @ frame_needed = 0, uses_anonymous_args = 0
+        @ link register save eliminated.
+        ldr     r0, .L2
+        b       puts
+.L3:
+        .align  2
+.L2:
+        .word   .LC0
+        .size   main, .-main
+        .section        .rodata.str1.1,"aMS",%progbits,1
+.LC0:
+        .ascii  "correcto\000"
+	.ident  "GCC: (Raspbian 8.3.0-6+rpi1) 8.3.0"
+        .section        .note.GNU-stack,"",%progbits
