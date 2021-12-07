@@ -1,4 +1,8 @@
-
+/* Problema 2.2
+  En este programa lo que se realiza es un if en el cual en esta situacion como se pidio en las instrucciones no se utilizara un else
+   @Autor Jaberwooc
+   @Fecha 6 de diciembre de 2021
+    */
         .arch armv6
         .eabi_attribute 28, 1
         .eabi_attribute 20, 1
