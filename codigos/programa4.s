@@ -1,4 +1,9 @@
-      .arch armv6
+     /* Problema 2.4
+  En este programa lo que se realiza es un switch case y un ciclo for en el cual se asigna un texto con uncase y despues se imprime junto con el numero de año correspondiente 
+   @Autor Jaberwooc
+   @Fecha 6 de diciembre de 2021
+    */
+     .arch armv6
         .eabi_attribute 28, 1
         .eabi_attribute 20, 1
         .eabi_attribute 21, 1
