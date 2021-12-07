@@ -1,4 +1,8 @@
-   
+  /* Problema 3.1
+  En este programa lo que se realiza es determinar el elemento menor de un vector e imprimirlo 
+   @Autor Jaberwooc
+   @Fecha 7 de diciembre de 2021
+    */ 
    .arch armv6
         .eabi_attribute 28, 1
         .eabi_attribute 20, 1
