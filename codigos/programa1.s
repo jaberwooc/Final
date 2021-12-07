@@ -1,4 +1,8 @@
-
+/* Problema 2.1
+  En este programa lo que se realiza es un ciclo for en el cual se imprimen los numeros del 100 al dos de 2 en 2
+   @Autor Jaberwooc
+   @Fecha 6 de diciembre de 2021
+    */
         .arch armv6
         .eabi_attribute 28, 1
         .eabi_attribute 20, 1
