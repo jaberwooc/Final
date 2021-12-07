@@ -1,4 +1,9 @@
-       .arch armv6
+      /* Problema 2.3
+  En este programa lo que se realiza es un ciclo for poro con la instruccion tst implementada 
+   @Autor Jaberwooc
+   @Fecha 6 de diciembre de 2021
+    */
+      .arch armv6
         .eabi_attribute 28, 1
         .eabi_attribute 20, 1
         .eabi_attribute 21, 1
