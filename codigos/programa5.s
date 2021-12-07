@@ -1,4 +1,9 @@
-    .arch armv6
+/* Problema 2.5
+  En este programa lo quearemos es declarar y llenar un vector de este vector sumaremos su elementos pero solo los de la columna 2  y como resultado para verificar que este correcto nos tiene que dar 104
+   @Autor Jaberwooc
+   @Fecha 6 de diciembre de 2021
+    */
+.arch armv6
         .eabi_attribute 28, 1
         .eabi_attribute 20, 1
         .eabi_attribute 21, 1
