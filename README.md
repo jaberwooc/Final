@@ -7,10 +7,10 @@
 
 ## Capitulo 3 ☜(ﾟヮﾟ☜) ＞︿＜
 
-![](https://github.com/jaberwooc/Final/blob/main/im%C3%A1genes/1.png)
+![](https://github.com/jaberwooc/Final/blob/main/im%C3%A1genes/3.png)
 
 ## Ejecucion del programa 😃
-![](https://github.com/jaberwooc/Final/blob/main/im%C3%A1genes/2.png)
+![](https://github.com/jaberwooc/Final/blob/main/im%C3%A1genes/4.png)
 
 
 
