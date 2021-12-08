@@ -33,9 +33,9 @@ minimo:
         cmp     r2, r1
         blt     .L3
         mov     r0, r3
-        bx      lr
+        bx      lr /*salimos*/
 .L3:
-        ldr     ip, [r0, r2, lsl #2]
+        ldr     ip, [r0, r2, lsl #2] /*bucle para encontrar el minimo*/
         add     r2, r2, #1
         cmp     r3, ip
         movge   r3, ip
@@ -51,14 +51,14 @@ minimo:
 main:
         @ args = 0, pretend = 0, frame = 0
         @ frame_needed = 0, uses_anonymous_args = 0
-        push    {r4, lr}
+        push    {r4, lr} /*salvamos los registros */
         mov     r1, #8
         ldr     r0, .L6
-        bl      minimo
-        pop     {r4, lr}
+        bl      minimo /*llamada a la funcion minimo*/
+        pop     {r4, lr} /*recuperamos registro*/
         mov     r1, r0
         ldr     r0, .L6+4
-        b       printf
+        b       printf    /*imprimimos*/
 .L7:
         .align  2
 .L6:
@@ -71,7 +71,7 @@ main:
         .set    .LANCHOR0,. + 0
         .type   vect, %object
         .size   vect, 32
-vect:
+vect: /*Declaramos el vector y asignamos sus valores*/
         .word   8
         .word   10
          .word   -3
@@ -81,7 +81,7 @@ vect:
         .word   2
         .word   3
         .section        .rodata.str1.1,"aMS",%progbits,1
-.LC0:
+.LC0:/*Declaramos el texto que imprimira junto con el valor*/
         .ascii  "el numero menor del vector es :  %d\012\000"
         .ident  "GCC: (Raspbian 8.3.0-6+rpi1) 8.3.0"
         .section        .note.GNU-stack,"",%progbits
