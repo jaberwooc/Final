@@ -13,4 +13,12 @@
 ![](https://github.com/jaberwooc/Final/blob/main/im%C3%A1genes/4.png)
 
 
+## Capitulo 4 ☜(ﾟヮﾟ☜) ＞︿＜
+
+![](https://github.com/jaberwooc/Final/blob/main/im%C3%A1genes/5.png)
+
+## Ejecucion del programa 😃
+![](https://github.com/jaberwooc/Final/blob/main/im%C3%A1genes/6.png)
+
+
 
