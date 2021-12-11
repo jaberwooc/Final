@@ -1,3 +1,8 @@
+  /* Problema 4.2
+  En este programa lo que se realiza es en cender una led con la opcion del retardador y con la ayuda de un bucle
+   @Autor Jaberwooc
+   @Fecha 10 de diciembre de 2021
+    */ 
 .set GPBASE, 0x20200000
 .set GPFSEL0, 0x00
 .set GPSET0, 0x1c
