@@ -1,4 +1,8 @@
-
+  /* Problema 4.1
+  En este programa lo que se realiza es imprimir un texto llamando al sistema write
+   @Autor Jaberwooc
+   @Fecha 10 de diciembre de 2021
+    */ 
 .data
 cadena : .asciz " Hola Mundo !\n "
 cadenafin :
